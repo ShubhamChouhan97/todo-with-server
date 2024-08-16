@@ -1,0 +1,187 @@
+body {
+    overflow: hidden;
+}
+
+.header {
+    background-color: orangered;
+    width: 100vw;
+    height: 9vh;
+    margin-top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Updated for better responsiveness */
+    box-sizing: border-box;
+    padding-right: 10px; /* Added padding for better spacing */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 0; /* Removed fixed margin for better responsiveness */
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links li button {
+    background-color: rgb(66, 220, 66);
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.nav-links li button:hover {
+    cursor: pointer;
+    transition-duration: 0.8s;
+    box-shadow: 0px 4px 12px 4px rgba(9, 107, 139, 0.571);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: #e9e0e0;
+}
+
+.welcome {
+    background-color: white;
+    border-radius: 5px;
+    height: 430px;
+    width: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wel {
+    text-align: center;
+    font-size: x-large;
+}
+#signup,#signin{
+    display: none;
+}
+.signup, .signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.signup p, .signin p {
+    font-weight: 700;
+    font-size: x-large;
+    text-align: center;
+}
+
+.ragister, .login {
+    background-color: orangered;
+    border: none;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.ragister:hover, .login:hover {
+    cursor: pointer;
+    transition-duration: 0.8s;
+    box-shadow: 0px 4px 12px 4px rgba(9, 107, 139, 0.571);
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* .header{
+        display: flex;
+        float:right;
+    } */
+    .navbar {
+        justify-content: flex-end;
+        float: right;
+    }
+    
+    .nav-links {
+        /* flex-direction: column; */
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .nav-links li {
+        margin-left: 10px ;
+    }
+    
+    .welcome {
+        width: 40%;
+        height: 40%;
+        padding: 20px;
+    }
+    
+    .wel p{
+margin-top: 0;
+    } .signup p, .signin p {
+        margin-top: 0;
+        margin-right: 40px;
+        font-size: small;
+    }
+    .username, .password{
+        font-size: small;
+        width: 140px;
+    }
+    .signup, .signin {
+        margin-left: 68px;
+        width: 100%;
+        font-size: medium;
+    }
+    
+    .ragister, .login {
+        width: 60px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        float: right;
+        padding: 0;
+    }
+    
+    .nav-links {
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .nav-links li {
+        margin-top: 10px;
+        margin-left: 10px ;
+    }
+    
+    .welcome {
+        margin:auto;
+        width: 80%;
+        height: 45%;
+        padding: 20px;
+    }
+    .signup p, .signin p {
+        font-size: medium;
+    }
+    
+    .signup, .signin { 
+        width: 100%;
+        font-size: small;
+    }
+    
+    .ragister, .login {
+        margin-top: 40px;
+        margin-left: 40px;
+        width: 30%;
+    }
+}

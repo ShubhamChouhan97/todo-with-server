@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Assignment</title>
+    <link rel="stylesheet" href="todocss.css">
+</head>
+<body>
+<div class="contenier">
+    <div class="logout"><p class="namep" id="namep">Hi</p><button class="Log-Out" onclick="logout()">Log-Out</button></div>
+    <div class="todo">
+    <h2>TO-DO List <img src="img1.png" alt="todoimage"></h2>
+     <div class="row">
+     <input type="text" id="input" placeholder="write task">
+      <button onclick="addtask()" class="btn" id="addbtn">Add</button>
+      <button onclick="removedata()" class="btn2">Remove</button>
+     </div>
+     <ul id="listt">
+        <!-- <li class="checked">Task 1</li>
+        <li>Task 2 </li> -->
+        
+     </ul>
+    
+    </div>
+</div>
+
+
+    <script src="todojs.js"></script>
+</body>
+</html>
